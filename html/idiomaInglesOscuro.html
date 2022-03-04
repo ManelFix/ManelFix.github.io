@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shorcut icon" href="../img/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Manel Palomares</title>
+</head>
+<body>
+
+    <!-- Menú -->
+    <header>
+        <nav class="navStyle navbar navbar-fixed-top navbar-inverse">
+            <div class="container contenedorNav">
+                <div class="navbar-header">
+                    <button id="btnMenuResponsive" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="comprovarBoton();">
+                    <span class="sr-only">Navegació</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a href="idiomaInglesOscuro.html"><img src="../img/logo.svg" alt="" class="logoTamano"/></a>
+                    <div class="divBotonesNav hidden-lg hidden-md hidden-sm">
+                        <label class="btnSwitch">
+                            <input type="checkbox" class="skeuo__switch" onclick="setTimeout('modosWeb();', 200);">
+                            <div class="skeuo__button">
+                                <span class="bx bx-circle skeuo__circle"></span>
+                                <span class="bx bx-minus skeuo__line"></span>
+                            </div>
+                        </label>
+                        <span id="btnIdiomas2" class="bx bx-world iconoLenguaje" onclick="desplegarIdioma();"></span>
+                        <div id="mostrarIdiomes2" class="divIdiomas">
+                            <a href="../index.html">
+                                <img src="../img/LanguageES.png">
+                                <p>Español</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav menu navText">
+                        <li class="responsiveLiSob"><a href="#sobremi"><span class='bx bx-user iconoNav'></span>About me</a></li>
+                        <li class="responsiveLiExp"><a href="#experiencia"><span class='bx bxs-graduation iconoNav'></span>Experience</a></li>
+                        <li><a href="#proyectos"><span class='bx bx-layer iconoNav'></span>Projects</a></li>
+                        <li><a href="#contacto"><span class='bx bx-conversation iconoNav'></span>Contact</a></li>
+                        <label class="btnSwitch hidden-xs">
+                            <input type="checkbox" class="skeuo__switch" onclick="setTimeout('modosWeb();', 200);">
+                            <div class="skeuo__button">
+                                <span class="bx bx-circle skeuo__circle"></span>
+                                <span class="bx bx-minus skeuo__line"></span>
+                            </div>
+                        </label>
+                        <span id="btnIdiomas" class="bx bx-world iconoLenguaje hidden-xs" onclick="desplegarIdioma();"></span>
+                        <div id="mostrarIdiomes" class="divIdiomas">
+                            <a href="../index.html">
+                                <img src="../img/LanguageES.png">
+                                <p>Español</p>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="container secAboutMe" data-aos="fade-up">
+        <div class="row divAboutMe">
+            <div class="col-md-7 col-xs-12 col-sm-10 divAboutText">
+                <h1>Manel Palomares</h1>
+                <h2>Web Developer</h2>
+                <a href="#contacto"><button class="boton draw-border">Contact</button></a>
+            </div>
+            <div class="col-sm-2 hidden-md hidden-lg hidden-xs redesSociales">
+                <a href="https://github.com/ManelFix"><span class='bx bxl-github'></span></a>
+                <a href="mailto:manelpalomares@gmail.com"><span class='bx bxl-gmail'></span></a>
+                <a href="https://www.linkedin.com/in/manel-palomares-burgada-0b87701b8/"><span class='bx bxl-linkedin'></span></a>
+                <a href="https://www.instagram.com/maneeelpb/"><span class='bx bxl-instagram'></span></a>
+            </div>
+            <div class="col-md-4 col-xs-12 hidden-sm imagenPortada">
+                <img src="../img/main.svg" alt="" srcset="">
+            </div>
+            <div class="col-md-3 col-xs-12 hidden-sm redesSociales">
+                <a href="https://github.com/ManelFix"><span class='bx bxl-github'></span></a>
+                <a href="mailto:manelpalomares@gmail.com"><span class='bx bxl-gmail'></span></a>
+                <a href="https://www.linkedin.com/in/manel-palomares-burgada-0b87701b8/"><span class='bx bxl-linkedin'></span></a>
+                <a href="https://www.instagram.com/maneeelpb/"><span class='bx bxl-instagram'></span></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sobre mí -->
+    <section id="sobremi" class="container secSobreMi" data-aos="fade-down">
+        <div class="row responsiveSobreMi">
+            <div class="col-md-12 col-xs-12 titulosSeccion">
+                <h3>About me</h3>
+            </div>
+            <div class="col-md-5 col-xs-12 avatar">
+                <img src="../img/avatar.svg">
+            </div>
+            <div class="col-md-6 col-xs-12 rounded bg-white shadow-dark infoSobreMi">
+                <div class="col-md-6 col-xs-12 ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veritatis unde a odio molestiae, illo
+                        sint quos asperiores quidem dolores rem facilis debitis saepe deleniti.</p>
+                    <a class="hidden-xs hidden-sm" href="../PalomaresManel_CV.pdf"><button class="btnCV">Download the resume</button></a>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>HTML - CSS</h4>
+                            <!-- <span>85%</span> -->
+                        </div>
+                        <div class="progress colorDiv1">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-info skillJS">
+                            <h4>Javascript</h4>
+                            <!-- <span>65%</span> -->
+                        </div>
+                        <div class="progress colorDiv2">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-info skillJS">
+                            <h4>PHP</h4>
+                            <!-- <span>90%</span> -->
+                        </div>
+                        <div class="progress colorDiv3">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 hidden-lg hidden-md">
+                    <a href="../PalomaresManel_CV.pdf"><button class="btnCV">Download the resume</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="container secExperiencia" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-12 titulosSeccion">
+                <h3>Experience</h3>
+            </div>
+            <div class="contenedoresExperiencia">
+                <div class="col-md-4 col-xs-12 contenedoresExp">
+                    <div class="timeline edu bg-white shadow-dark divExperiencia">
+                        <span class='bx bxs-graduation iconoExperiencia'></span>
+                        <div class="timeline-container wow fadeInUp">
+                            <div class="content">
+                                <span class="time">2020 - Actually</span>
+                                <h3>CFGS DAW</h3>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </div>
+                        <span class="line linia1Contenenedor1"></span>
+                        <span class='bx bxs-graduation iconoExperiencia'></span>
+                        <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="content">
+                                <span class="time">2018 - 2020</span>
+                                <h3 class="title">CFGM SMX</h3>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </div>
+                        <span class="line2 linia2Contenenedor1"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 contenedoresExp">
+                    <div class="timeline edu bg-white shadow-dark divExperiencia">
+                        <span class='bx bxs-briefcase iconoExperiencia'></span>
+                        <div class="timeline-container wow fadeInUp">
+                            <div class="content">
+                                <span class="time">2021 - Actually</span>
+                                <h3>Web Developer</h3>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </div>
+                        <span class="line linia1Contenenedor2"></span>
+                        <span class='bx bxs-briefcase iconoExperiencia'></span>
+                        <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="content">
+                                <span class="time">2019 - 2020</span>
+                                <h3 class="title">Computer technician</h3>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </div>
+                        <span class="line2 linia2Contenenedor2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="container" data-aos="fade-right">
+        <div class="row">
+            <div class="col-md-12 titulosSeccion">
+                <h3>Projects</h3>
+            </div>
+        </div>
+    </section>
+    <section class="container secProyecto1" data-aos="fade-right">
+        <div class="row">
+            <div class="col-md-6 contenedorInfo hidden-md hidden-lg">
+                <h5>Project 1</h5>
+            </div>
+            <div class="col-md-6 imgProyectos">
+                <img src="../img/proyecto1.jpg" class="imgProyecto">
+            </div>
+            <div class="col-md-6 contenedorInfo">
+                <h5 class="hidden-xs hidden-sm">Project 1</h5>
+                <div class="divTextoProyecto shadow-dark">
+                    <p>Year: 2022</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati esse temporibus, optio 
+                        explicabo voluptatibus eaque quae sit veritatis laborum aliquid quaerat nulla amet, dolore neque?
+                    </p>
+                </div>
+                <div class="divIconosProyecto">
+                    <img src="../img/iconoHTML.svg">
+                    <img src="../img/iconoCSS.svg">
+                    <img src="../img/iconoBootstrap.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container secProyecto2" data-aos="fade-left">
+        <div class="row">
+            <div class="col-md-5 contenedorInfo posicioInvertida hidden-lg hidden-md">
+                <h5>Project 2</h5>
+            </div>
+            <div class="col-md-5 contenedorInfo posicioInvertida hidden-xs hidden-sm">
+                <h5>Project 2</h5>
+                <div class="divTextoProyecto shadow-dark">
+                    <p>Year: 2022</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati esse temporibus, optio 
+                        explicabo voluptatibus eaque quae sit veritatis laborum aliquid quaerat nulla amet, dolore neque?
+                    </p>
+                </div>
+                <div class="divIconosProyecto divProyecto2">
+                    <img src="../img/iconoTS.svg">
+                    <img src="../img/iconoPHP.svg">
+                    <img src="../img/iconoJava.svg">
+                </div>
+            </div>
+            <div class="col-md-6 imgDebajo">
+                <img src="../img/proyecto2.jpg" class="imgProyecto">
+            </div>
+            <div class="col-md-5 contenedorInfo posicioInvertida hidden-lg hidden-md">
+                <div class="divTextoProyecto shadow-dark">
+                    <p>Year: 2022</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati esse temporibus, optio 
+                        explicabo voluptatibus eaque quae sit veritatis laborum aliquid quaerat nulla amet, dolore neque?
+                    </p>
+                </div>
+                <div class="divIconosProyecto divProyecto2">
+                    <img src="../img/iconoTS.svg">
+                    <img src="../img/iconoPHP.svg">
+                    <img src="../img/iconoJava.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container" data-aos="flip-up">
+        <div class="row">
+            <div class="col-md-12 titulosSeccion">
+                <h3>Contact</h3>
+            </div>
+        </div>
+    </section>
+    <section class="container" data-aos="flip-up">
+        <div class="row">
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <img src="../img/contactoForm.svg" class="imagenContacto">
+            </div>
+            <div class="col-md-8 formularioResponsive">
+                <input type="text" placeholder="Name" class="inputsForm inputResponsive">
+                <input type="text" placeholder="Email" class="inputsForm">
+                <textarea class="mensajeForm" cols="30" rows="9" placeholder="Message"></textarea>
+                <button class="btnEnviar">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Manel Palomares - &copy; 2022</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        AOS.init();
+
+        function modosWeb() {
+            location.href = "idiomaInglesClaro.html";
+        }
+
+        function desplegarIdioma() {
+            var btn = document.getElementById("btnMenuResponsive");
+            var divIdiomas = document.getElementById("mostrarIdiomes");
+            var divIdiomas2 = document.getElementById("mostrarIdiomes2");
+            
+            if (divIdiomas2.style.display == "flex" || divIdiomas.style.display == "flex") {
+                divIdiomas2.style.display = "none";
+                divIdiomas.style.display = "none";
+                btn.disabled = false;
+            }
+            else {
+                divIdiomas2.style.display = "flex";
+                divIdiomas.style.display = "flex";
+                btn.disabled = true;
+            }
+        }
+
+        function comprovarBoton(){
+            var btnIdiomas = document.getElementById("btnIdiomas");
+            var btnIdiomas2 = document.getElementById("btnIdiomas2");
+           
+            if(document.getElementById("btnMenuResponsive").ariaExpanded == "false") {
+                btnIdiomas.style.pointerEvents = "none";
+                btnIdiomas2.style.pointerEvents = "none";
+            }
+            else{
+                btnIdiomas.style.pointerEvents = "auto";
+                btnIdiomas2.style.pointerEvents = "auto";
+            }
+
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
