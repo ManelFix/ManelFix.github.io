@@ -357,6 +357,10 @@ body{
    width: 57%;
 }
 
+.divTextoSobreMi span{
+    color: #5a80b6;
+}
+
 .rounded {
     border-radius: 20px !important;
 }
@@ -979,7 +983,16 @@ footer p{
         font-size: 34px;
     }
     .divAboutText h2{
-        font-size: 22px;
+        font-size: 25px;
+    }
+    .linia2Contenenedor1{
+        top: 255px;
+    }
+    .linia1Contenenedor2{
+        bottom: 274px;
+    }
+    .linia2Contenenedor2{
+        top: 258px;
     }
 }
 
@@ -988,7 +1001,7 @@ footer p{
         font-size: 30px;
     }
     .divAboutText h2{
-        font-size: 18px;
+        font-size: 24px;
     }
 }
 
@@ -997,6 +1010,6 @@ footer p{
         font-size: 28px;
     }
     .divAboutText h2{
-        font-size: 20px;
+        font-size: 23px;
     }
 }
