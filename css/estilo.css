@@ -134,7 +134,7 @@ body{
 
 .divIdiomas{
     position: fixed;
-    top: 53px;
+    top: 50px;
     right: 167px;
     background-color: #26266c;
     display: flex;
@@ -699,11 +699,117 @@ footer p{
     text-align: center;
 }
 
+@media (max-width: 3000px){
+    .divIdiomas{
+        right: 900px;
+    }
+}
 
+@media (max-width: 2900px){
+    .divIdiomas{
+        right: 850px;
+    }
+}
+
+@media (max-width: 2800px){
+    .divIdiomas{
+        right: 800px;
+    }
+}
+
+@media (max-width: 2700px){
+    .divIdiomas{
+        right: 800px;
+    }
+}
+
+@media (max-width: 2600px){
+    .divIdiomas{
+        right: 700px;
+    }
+}
+
+@media (max-width: 2500px){
+    .divIdiomas{
+        right: 650px;
+    }
+}
+
+@media (max-width: 2400px){
+    .divIdiomas{
+        right: 600px;
+    }
+}
+
+@media (max-width: 2300px){
+    .divIdiomas{
+        right: 550px;
+    }
+}
+
+@media (max-width: 2200px){
+    .divIdiomas{
+        right: 500px;
+    }
+}
+
+@media (max-width: 2100px){
+    .divIdiomas{
+        right: 450px;
+    }
+}
+
+@media (max-width: 2000px){
+    .divIdiomas{
+        right: 400px;
+    }
+}
+
+@media (max-width: 1900px){
+    .divIdiomas{
+        right: 350px;
+    }
+}
+
+@media (max-width: 1800px){
+    .divIdiomas{
+        right: 300px;
+    }
+}
+
+@media (max-width: 1700px){
+    .divIdiomas{
+        right: 250px;
+    }
+}
+
+@media (max-width: 1600px){
+    .divIdiomas{
+        right: 170px;
+    }
+}
+
+@media (max-width: 1500px){
+    .divIdiomas{
+        right: 150px;
+    }
+}
+
+@media (max-width: 1400px){
+    .divIdiomas{
+        right: 100px;
+    }
+}
+
+@media (max-width: 1300px){
+    .divIdiomas{
+        right: 0px;
+    }
+}
 
 @media (max-width: 1200px){
     .divIdiomas{
-        right: 100px;
+        right: 50px;
     }
     .divAboutText h1{
         font-size: 56px;
@@ -731,7 +837,7 @@ footer p{
         width: 100%;
     }
     .menu{
-        column-gap: 10px;
+        column-gap: 23px;
     }
     .divIdiomas{
         right: 2px;
@@ -896,7 +1002,7 @@ footer p{
         line-height: 50px;
     }
     .divAboutText h2{
-        font-size: 26px;
+        font-size: 28px;
     }
     .imagenPortada img{
         width: 330px;
@@ -936,80 +1042,26 @@ footer p{
     
 }
 
-@media (max-width: 509px){
-    .divAboutText h1{
-        font-size: 47px;
-    }
-    .divAboutText h2{
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 484px){
-    .divAboutText h1{
-        font-size: 45px;
-    }
-    .divAboutText h2{
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 465px){
-    .divAboutText h1{
-        font-size: 42px;
-    }
-    .divAboutText h2{
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 439px){
-    .divAboutText h1{
-        font-size: 40px;
-    }
-    .divAboutText h2{
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 421px){
-    .divAboutText h1{
-        font-size: 37px;
-    }
-}
-
-@media (max-width: 395px){
-    .divAboutText h1{
-        font-size: 34px;
-    }
-    .divAboutText h2{
-        font-size: 25px;
-    }
+@media (max-width: 376px){
     .linia2Contenenedor1{
-        top: 255px;
+        top: 256px;
     }
     .linia1Contenenedor2{
-        bottom: 274px;
+        bottom: 305px;
     }
     .linia2Contenenedor2{
-        top: 258px;
+        top: 280px;
     }
 }
 
-@media (max-width: 369px){
-    .divAboutText h1{
-        font-size: 30px;
+@media (max-width: 324px){
+    .linia1Contenenedor1{
+        bottom: 290px;
     }
-    .divAboutText h2{
-        font-size: 24px;
+    .linia2Contenenedor1{
+        top: 278px;
     }
-}
-
-@media (max-width: 333px){
-    .divAboutText h1{
-        font-size: 28px;
-    }
-    .divAboutText h2{
-        font-size: 23px;
+    .linia2Contenenedor2{
+        top: 305px;
     }
 }

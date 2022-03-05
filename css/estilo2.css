@@ -34,6 +34,10 @@ body{
     margin-top: 8px;
 }
 
+.botonMenu{
+    background-color: black;
+}
+
 .navText a{
     color: black !important;
     font-family: 'Rubik', sans-serif;
@@ -135,7 +139,7 @@ body{
 
 .divIdiomas{
     position: fixed;
-    top: 54px;
+    top: 50px;
     right: 167px;
     background-color: #26266c;
     display: flex;
@@ -739,7 +743,7 @@ footer p{
         width: 100%;
     }
     .menu{
-        column-gap: 10px;
+        column-gap: 23px;
     }
     .divIdiomas{
         right: 2px;
@@ -904,7 +908,7 @@ footer p{
         line-height: 50px;
     }
     .divAboutText h2{
-        font-size: 26px;
+        font-size: 28px;
     }
     .imagenPortada img{
         width: 330px;
@@ -944,71 +948,26 @@ footer p{
     
 }
 
-@media (max-width: 509px){
-    .divAboutText h1{
-        font-size: 47px;
+@media (max-width: 376px){
+    .linia2Contenenedor1{
+        top: 256px;
     }
-    .divAboutText h2{
-        font-size: 35px;
+    .linia1Contenenedor2{
+        bottom: 305px;
     }
-}
-
-@media (max-width: 484px){
-    .divAboutText h1{
-        font-size: 45px;
-    }
-    .divAboutText h2{
-        font-size: 32px;
+    .linia2Contenenedor2{
+        top: 280px;
     }
 }
 
-@media (max-width: 465px){
-    .divAboutText h1{
-        font-size: 42px;
+@media (max-width: 324px){
+    .linia1Contenenedor1{
+        bottom: 290px;
     }
-    .divAboutText h2{
-        font-size: 28px;
+    .linia2Contenenedor1{
+        top: 278px;
     }
-}
-
-@media (max-width: 439px){
-    .divAboutText h1{
-        font-size: 40px;
-    }
-    .divAboutText h2{
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 421px){
-    .divAboutText h1{
-        font-size: 37px;
-    }
-}
-
-@media (max-width: 395px){
-    .divAboutText h1{
-        font-size: 34px;
-    }
-    .divAboutText h2{
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 369px){
-    .divAboutText h1{
-        font-size: 30px;
-    }
-    .divAboutText h2{
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 333px){
-    .divAboutText h1{
-        font-size: 28px;
-    }
-    .divAboutText h2{
-        font-size: 23px;
+    .linia2Contenenedor2{
+        top: 305px;
     }
 }
