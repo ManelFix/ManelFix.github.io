@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:hsl(210, 36%, 96%) !important;
+}
+
+.seccion{
+    padding: 5rem 0;
+    width: 90vw;
+    margin: 12%;
+    max-width: 35rem;
+    margin-top: 8rem;
+}
+
+.formulari h3{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    line-height: 28px;
+    color: rgb(9, 9, 104);
+
+}
+
+.formulari{
+    margin-bottom: 30px;
+}
+
+.divRow{
+    width: 50%;
+    padding-top: 33px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
+    min-height: 250px;
+}
+
+.divInput{
+    display: flex;
+}
+
+.iForm{
+    margin-right: 5px;
+}
+
+.divProd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s linear;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;;
+    text-transform: capitalize;
+    margin-top: 15px;
+
+}
+.divProd:hover{
+    color: hsl(210, 22%, 49%);
+    background: hsl(210, 36%, 96%);
+}
+.divProd:hover p{
+    color: hsl(210, 22%, 49%);
+}
+.divProd p{
+    margin-bottom: 0;
+    color: hsl(209, 61%, 16%);
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.icono{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.divPrincipal{
+    margin-bottom: auto;
+    /* min-height: 350px !important; */
+}
+
+.btn-eliminar{
+    text-transform: capitalize;
+    height: 1.5rem;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: hsl(360, 71%, 66%);
+    margin: 0 auto;
+    font-size: 0.85rem;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 1.25rem;
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: none;
+}
+.btn-eliminar:hover{
+    color: hsl(360, 67%, 44%);
+}
+
+.resultat{
+    margin-bottom: 1rem;
+    height: 2.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    visibility: hidden;
+}
+
+.iEdit{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.iEdit:hover{
+    color: lightgreen;
+}
+
+.iElim:hover{
+    color: red;
+}
+
+.noShow{
+    display: none !important;
+}
+
+.show{
+    display: inline-block;
+}
